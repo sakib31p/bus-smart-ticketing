@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,44 +9,119 @@
     <link rel="stylesheet" href="styles/style.css">
     <title>Smart Ticket</title>
 </head>
+
 <body>
-   <header class="container max-w-[1170px] mx-auto px-5 lg:px-0">
-    
-<!-- navbar section -->
-<div class="font-inter navbar lg:my-8">
-    <div class="navbar-start">
-      <div class="dropdown">
-        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+    <header class="container max-w-[1170px] mx-auto px-5 lg:px-0">
+
+        <!-- navbar section -->
+        <div class="font-inter navbar lg:my-8">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 gap-4">
+                        <li><a class=" text-base text-[#030712B2]">Home</a></li>
+                        <li><a class="text-base text-[#030712B2]">About</a></li>
+                        <li><a class="text-base text-[#030712B2]">Destination</a></li>
+                        <li><a class="text-base text-[#030712B2]">Search</a></li>
+                    </ul>
+                </div>
+                <a class="text-2xl text-[#030712] lg:text-4xl font-semibold lg:font-extrabold" href="">P-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 gap-11">
+                    <li><a class=" text-base text-[#030712B2]">Home</a></li>
+                    <li><a class="text-base text-[#030712B2]">About</a></li>
+                    <li><a class="text-base text-[#030712B2]">Destination</a></li>
+                    <li><a class="text-base text-[#030712B2]">Search</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end gap-3 lg:gap-6">
+
+                <a
+                    class="btn bg-[#1dd1001a] text-[#1DD100] lg:text-xl font-bold px-4 lg:px-6 rounded-xl border-[1px] border-[#1dd10066]">Bus
+                    <img src="./images/bus-icon.png" alt=""></a>
+            </div>
         </div>
-        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 gap-4">
-          <li><a class=" text-base text-[#030712B2]">Home</a></li>
-          <li><a class="text-base text-[#030712B2]">About</a></li>
-          <li><a class="text-base text-[#030712B2]">Destination</a></li>
-          <li><a class="text-base text-[#030712B2]">Search</a></li>
-        </ul>
-      </div>
-      <a class="text-2xl text-[#030712] lg:text-4xl font-semibold lg:font-extrabold" href="">P-Ticket</a>
-    </div>
-    <div class="navbar-center hidden lg:flex">
-      <ul class="menu menu-horizontal px-1 gap-11">
-        <li><a class=" text-base text-[#030712B2]">Home</a></li>
-        <li><a class="text-base text-[#030712B2]">About</a></li>
-        <li><a class="text-base text-[#030712B2]">Destination</a></li>
-        <li><a class="text-base text-[#030712B2]">Search</a></li>
-      </ul>
-    </div>
-    <div class="navbar-end gap-3 lg:gap-6">
-     
-      <a class="btn bg-[#1dd1001a] text-[#1DD100] lg:text-xl font-bold px-4 lg:px-6 rounded-xl border-[1px] border-[#1dd10066]">Bus <img src="./images/bus-icon.png" alt=""></a>
-    </div>
-  </div>
+
+        <!-- banner section -->
+
+        <div class="hero h-[550px] rounded-[32px] font-raleway relative "
+            style="background: linear-gradient(180deg, rgba(3, 7, 18, 0.50) 0%, rgba(3, 7, 18, 0.00) 100%), url(./images/banner.png), lightgray 50% / cover no-repeat;">
+
+            <div class=" text-center text-neutral-content">
+                <div>
+                    <h1 class="mb-5 text-4xl lg:text-5xl text-white font-extrabold font-inter">End-to-End Travel with
+                        <br> <span class="text-[#1DD100]">P Paribahan</span>
+                    </h1>
+
+                    <p class="mb-5">"End-to-end travel with Paribahan: seamless, efficient, comfortable <br>
+                        transportation service connecting destinations effortlessly."</p>
+                    <a href="#sit-section"><button
+                            class="btn btn-primary bg-[#1DD100] text-black font-bold text-base lg:text-xl border-0">Buy
+                            Tickets</button></a>
+                </div>
+            </div>
+
+
+            <!--  card section -->
+
+            <div
+                class=" lg:justify-evenly lg:gap-6  items-center lg:flex-row mt-4 lg:mt-12 hidden lg:flex lg:absolute lg:-bottom-[11%] lg:right[25%]">
+
+                <!-- 1st card  -->
+                <div
+                    class="flex justify-center items-center gap-4 bg-white py-8 pl-8 pr-12 rounded-3xl border-b-[3px] border-solid border-[#1DD100]">
+
+                    <img class="w-16 h-16" src="./images/people.png" alt="people...">
+
+                    <div>
+                        <h2 class="text-4xl text-[#030712] font-bold font-inter">500K+</h2>
+                        <p class="text-base text-[#030712B2] font-inter">Registered users</p>
+                    </div>
+
+                </div>
+                <!-- 2nd card  -->
+                <div
+                    class="flex justify-center items-center gap-4 bg-white py-8 pl-8 pr-12 rounded-3xl border-b-[3px] border-solid border-[#1DD100]">
+
+                    <img class="w-16 h-16" src="./images/ticket-cupon.png" alt="people...">
+
+                    <div>
+                        <h2 class="text-4xl text-[#030712] font-bold font-inter">1.7 lacks</h2>
+                        <p class="text-base text-[#030712B2] font-inter">Tickets sold</p>
+                    </div>
+
+                </div>
+                <!-- 3rd card  -->
+                <div
+                    class="flex justify-center items-center gap-4 bg-white py-8 pl-8 pr-12 rounded-3xl border-b-[3px] border-solid border-[#1DD100]">
+
+                    <img class="w-16 h-16" src="./images/stoppage.png" alt="people...">
+
+                    <div>
+                        <h2 class="text-4xl text-[#030712] font-bold font-inter">80K+</h2>
+                        <p class="text-base text-[#030712B2] font-inter">Rental partners</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
 
 
 
-   </header>
 
-  <!-- js file -->
+    </header>
+
+    <!-- js file -->
     <script src="scripts/script.js"></script>
 </body>
+
 </html>
