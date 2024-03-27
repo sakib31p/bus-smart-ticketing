@@ -2,126 +2,183 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.9.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Smart Ticket</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.9.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Smart Ticket</title>
 </head>
 
 <body>
-    <header class="container max-w-[1170px] mx-auto px-5 lg:px-0">
+  <header class="container max-w-[1170px] mx-auto px-5 lg:px-0">
 
-        <!-- navbar section -->
-        <div class="font-inter navbar lg:my-8">
-            <div class="navbar-start">
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 gap-4">
-                        <li><a class=" text-base text-[#030712B2]">Home</a></li>
-                        <li><a class="text-base text-[#030712B2]">About</a></li>
-                        <li><a class="text-base text-[#030712B2]">Destination</a></li>
-                        <li><a class="text-base text-[#030712B2]">Search</a></li>
-                    </ul>
-                </div>
-                <a class="text-2xl text-[#030712] lg:text-4xl font-semibold lg:font-extrabold" href="">P-Ticket</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1 gap-11">
-                    <li><a class=" text-base text-[#030712B2]">Home</a></li>
-                    <li><a class="text-base text-[#030712B2]">About</a></li>
-                    <li><a class="text-base text-[#030712B2]">Destination</a></li>
-                    <li><a class="text-base text-[#030712B2]">Search</a></li>
-                </ul>
-            </div>
-            <div class="navbar-end gap-3 lg:gap-6">
-
-                <a
-                    class="btn bg-[#1dd1001a] text-[#1DD100] lg:text-xl font-bold px-4 lg:px-6 rounded-xl border-[1px] border-[#1dd10066]">Bus
-                    <img src="./images/bus-icon.png" alt=""></a>
-            </div>
+    <!-- navbar section -->
+    <div class="font-inter navbar lg:my-8">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 gap-4">
+            <li><a class=" text-base text-[#030712B2]">Home</a></li>
+            <li><a class="text-base text-[#030712B2]">About</a></li>
+            <li><a class="text-base text-[#030712B2]">Destination</a></li>
+            <li><a class="text-base text-[#030712B2]">Search</a></li>
+          </ul>
         </div>
+        <a class="text-2xl text-[#030712] lg:text-4xl font-semibold lg:font-extrabold" href="">P-Ticket</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 gap-11">
+          <li><a class=" text-base text-[#030712B2]">Home</a></li>
+          <li><a class="text-base text-[#030712B2]">About</a></li>
+          <li><a class="text-base text-[#030712B2]">Destination</a></li>
+          <li><a class="text-base text-[#030712B2]">Search</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end gap-3 lg:gap-6">
 
-        <!-- banner section -->
+        <a
+          class="btn bg-[#1dd1001a] text-[#1DD100] lg:text-xl font-bold px-4 lg:px-6 rounded-xl border-[1px] border-[#1dd10066]">Bus
+          <img src="./images/bus-icon.png" alt=""></a>
+      </div>
+    </div>
 
-        <div class="hero h-[550px] rounded-[32px] font-raleway relative "
-            style="background: linear-gradient(180deg, rgba(3, 7, 18, 0.50) 0%, rgba(3, 7, 18, 0.00) 100%), url(./images/banner.png), lightgray 50% / cover no-repeat;">
+    <!-- banner section -->
 
-            <div class=" text-center text-neutral-content">
-                <div>
-                    <h1 class="mb-5 text-4xl lg:text-5xl text-white font-extrabold font-inter">End-to-End Travel with
-                        <br> <span class="text-[#1DD100]">P Paribahan</span>
-                    </h1>
+    <div class="hero h-[550px] rounded-[32px] font-raleway relative "
+      style="background: linear-gradient(180deg, rgba(3, 7, 18, 0.50) 0%, rgba(3, 7, 18, 0.00) 100%), url(./images/banner.png), lightgray 50% / cover no-repeat;">
 
-                    <p class="mb-5">"End-to-end travel with Paribahan: seamless, efficient, comfortable <br>
-                        transportation service connecting destinations effortlessly."</p>
-                    <a href="#sit-section"><button
-                            class="btn btn-primary bg-[#1DD100] text-black font-bold text-base lg:text-xl border-0">Buy
-                            Tickets</button></a>
-                </div>
-            </div>
+      <div class=" text-center text-neutral-content">
+        <div>
+          <h1 class="mb-5 text-4xl lg:text-5xl text-white font-extrabold font-inter">End-to-End Travel with <br> <span
+              class="text-[#1DD100]">P Paribahan</span></h1>
 
+          <p class="mb-5">"End-to-end travel with Paribahan: seamless, efficient, comfortable <br> transportation
+            service connecting destinations effortlessly."</p>
+          <a href="#sit-section"><button
+              class="btn btn-primary bg-[#1DD100] text-black font-bold text-base lg:text-xl border-0">Buy
+              Tickets</button></a>
+        </div>
+      </div>
 
-            <!--  card section -->
+      <!--  card section -->
 
-            <div
-                class=" lg:justify-evenly lg:gap-6  items-center lg:flex-row mt-4 lg:mt-12 hidden lg:flex lg:absolute lg:-bottom-[11%] lg:right[25%]">
+      <div
+        class=" lg:justify-evenly lg:gap-6  items-center lg:flex-row mt-4 lg:mt-12 hidden lg:flex lg:absolute lg:-bottom-[11%] lg:right[25%]">
 
-                <!-- 1st card  -->
-                <div
-                    class="flex justify-center items-center gap-4 bg-white py-8 pl-8 pr-12 rounded-3xl border-b-[3px] border-solid border-[#1DD100]">
+        <!-- 1st card  -->
+        <div
+          class="flex justify-center items-center gap-4 bg-white py-8 pl-8 pr-12 rounded-3xl border-b-[3px] border-solid border-[#1DD100]">
 
-                    <img class="w-16 h-16" src="./images/people.png" alt="people...">
+          <img class="w-16 h-16" src="./images/people.png" alt="people...">
 
-                    <div>
-                        <h2 class="text-4xl text-[#030712] font-bold font-inter">500K+</h2>
-                        <p class="text-base text-[#030712B2] font-inter">Registered users</p>
-                    </div>
+          <div>
+            <h2 class="text-4xl text-[#030712] font-bold font-inter">500K+</h2>
+            <p class="text-base text-[#030712B2] font-inter">Registered users</p>
+          </div>
 
-                </div>
-                <!-- 2nd card  -->
-                <div
-                    class="flex justify-center items-center gap-4 bg-white py-8 pl-8 pr-12 rounded-3xl border-b-[3px] border-solid border-[#1DD100]">
+        </div>
+        <!-- 2nd card  -->
+        <div
+          class="flex justify-center items-center gap-4 bg-white py-8 pl-8 pr-12 rounded-3xl border-b-[3px] border-solid border-[#1DD100]">
 
-                    <img class="w-16 h-16" src="./images/ticket-cupon.png" alt="people...">
+          <img class="w-16 h-16" src="./images/ticket-cupon.png" alt="people...">
 
-                    <div>
-                        <h2 class="text-4xl text-[#030712] font-bold font-inter">1.7 lacks</h2>
-                        <p class="text-base text-[#030712B2] font-inter">Tickets sold</p>
-                    </div>
+          <div>
+            <h2 class="text-4xl text-[#030712] font-bold font-inter">1.7 lacks</h2>
+            <p class="text-base text-[#030712B2] font-inter">Tickets sold</p>
+          </div>
 
-                </div>
-                <!-- 3rd card  -->
-                <div
-                    class="flex justify-center items-center gap-4 bg-white py-8 pl-8 pr-12 rounded-3xl border-b-[3px] border-solid border-[#1DD100]">
+        </div>
+        <!-- 3rd card  -->
+        <div
+          class="flex justify-center items-center gap-4 bg-white py-8 pl-8 pr-12 rounded-3xl border-b-[3px] border-solid border-[#1DD100]">
 
-                    <img class="w-16 h-16" src="./images/stoppage.png" alt="people...">
+          <img class="w-16 h-16" src="./images/stoppage.png" alt="people...">
 
-                    <div>
-                        <h2 class="text-4xl text-[#030712] font-bold font-inter">80K+</h2>
-                        <p class="text-base text-[#030712B2] font-inter">Rental partners</p>
-                    </div>
-
-                </div>
-            </div>
+          <div>
+            <h2 class="text-4xl text-[#030712] font-bold font-inter">80K+</h2>
+            <p class="text-base text-[#030712B2] font-inter">Rental partners</p>
+          </div>
 
         </div>
 
 
+      </div>
 
+    </div>
 
-    </header>
+  </header>
+  <!-- header end  -->
+  <main>
+    <!-- offer section -->
+    <section class="container max-w-[1170px] mx-auto mt-12 lg:mt-28 font-inter text-center mb-12 lg:mb-30 px-5 lg:px-0">
+      <h2 class="text-2xl lg:text-4xl text-center text-[#030712] font-bold mb-8 lg:mb-12 font-raleway">Best offers for
+        you</h2>
 
-    <!-- js file -->
-    <script src="scripts/script.js"></script>
+      <!-- 2 card section -->
+      <div class="flex flex-col lg:flex-row lg:justify-between ">
+
+        <!-- 1st card -->
+        <div
+          class="bg-[#FFBF0F] rounded-3xl flex justify-center items-center px-4 lg:px-[52px] gap-2 lg:gap-6 mb-6 lg:mt-0">
+
+          <div>
+
+            <h2 class="text-[#030712cc] text-2xl lg:text-4xl font-black flex justify-start">15% OFF</h2>
+            <h5 class="text-[#030712cc] text-xl font-semibold">on your next purchase</h5>
+            <p class="text-[#03071280] text-lg font-medium">use by January 2024</p>
+          </div>
+          <img src="./images/cupon-devider.png" alt="">
+
+          <div class="font-raleway ">
+
+            <h2 class="text-[#030712] text-2xl lg:text-4xl font-bold">NEW15</h2>
+            <p class="text-[#03071280] text-lg font-medium">Coupon Code</p>
+
+          </div>
+
+        </div>
+        <!-- 2nd card -->
+        <div
+          class="bg-[#F78C9C] rounded-3xl flex justify-center items-center px-4 lg:px-[45px] gap-2 lg:gap-4 mb-6 lg:mt-0">
+
+          <div>
+
+            <h2 class="text-[#030712cc] text-2xl lg:text-4xl font-black flex justify-start">20% OFF</h2>
+            <h5 class="text-[#030712cc] text-xl font-semibold">on your next purchase</h5>
+            <p class="text-[#03071280] text-lg font-medium">use by January 2024</p>
+          </div>
+          <img src="./images/cupon-devider.png" alt="">
+
+          <div class="font-raleway ">
+
+            <h2 class="text-[#030712] text-2xl lg:text-4xl font-bold ">Couple 20</h2>
+            <p class="text-[#03071280] text-lg font-medium">Coupon Code</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <button
+        class="btn text-[#1DD100] text-xl font-bold rounded-xl bg-white border-[1px] border-[#1DD100] mt-6 lg:mt-12">See
+        All Offers</button>
+
+    </section>
+    <!-- end offer section  -->
+
+  </main>
+
+  <!-- js file -->
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>
