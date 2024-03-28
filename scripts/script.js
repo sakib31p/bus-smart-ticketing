@@ -77,3 +77,50 @@ event.target.style.backgroundColor = "#1DD100";
     })
 }
 
+
+// cupon section
+const btn = document.getElementById('apply-btn')
+btn.addEventListener('click', function(){
+ 
+
+
+    // input value
+    const cuponElement = document.getElementById('input-field').value;
+
+if(cuponElement === 'NEW15' || cuponElement === 'Couple 20'){
+const discountContainer = document.getElementById('discountContainer');
+discountContainer.classList.remove('hidden');
+if(cuponElement === 'NEW15'){
+    const discountElement = document.getElementById('discountPrice');
+    const discountAmount = document.getElementById('totalPrice').innerText * 0.15;
+    discountElement.innerText = discountAmount.toFixed(2);
+grandTotal.innerText = document.getElementById('totalPrice').innerText - parseInt(discountAmount);
+const cuponContainer = document.getElementById('cuponContainer');
+cuponContainer.classList.add('hidden');
+}if(cuponElement === 'Couple 20'){
+
+    const discountElement = document.getElementById('discountPrice');
+    const discountAmount = document.getElementById('totalPrice').innerText * 0.2;
+ 
+    discountElement.innerText = discountAmount.toFixed(2);
+    grandTotal.innerText = document.getElementById('totalPrice').innerText - parseInt(discountAmount);
+    const cuponContainer = document.getElementById('cuponContainer');
+cuponContainer.classList.add('hidden');
+
+}
+
+}else{
+    alert('please apply valid cupon code')
+}
+
+
+
+})
+
+
+
+
+function setInnerText(id, value){
+document.getElementById(id).innerText = value;
+
+}
