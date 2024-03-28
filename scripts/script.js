@@ -17,7 +17,7 @@ for(const seat of seats){
        const title = seat.innerText;
        const price = 550;
        const className = 'Economoy';
-// document.getElementById('seat-count').innerText = count;
+
 
 setInnerText('seat-count', count);
 setInnerText('seat-left', seatLeft);
@@ -76,3 +76,4 @@ event.target.style.backgroundColor = "#1DD100";
     
     })
 }
+
